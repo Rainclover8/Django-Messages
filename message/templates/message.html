@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Message{% endblock title %}
+{% block content %}
+<nav class="navbar">
+    <a class="link" href="{% url "nasılÇalışır" %}">Nasıl Çalışlır</a>
+    <h1 class="header">Baran <span>ÇİÇEK</span> 👋</h1>
+    <a class="link" href="{% url "home" %}">Anasayfaya Gider</a>
+</nav>
+
+<form method='POST' class="form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn" type='submit'>Gönder</button>
+</form>
+
+
+
+{% endblock content %}

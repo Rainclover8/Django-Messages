@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rebeccapurple;
+}
+label{
+    color: white;
+    display: flex;
+    font-size: 3rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px solid darkcyan;
+    background-color: darkblue;
+}
+.navbar .link{
+    color: darkgoldenrod;
+    text-decoration: none;
+    font-size: 3rem; 
+    cursor: pointer;
+    border: 1px solid sandybrown;
+    background-color: darkslategray;
+    border-radius: 20px;
+    padding: 4px;
+}
+.header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: burlywood;
+}
+.header span{
+    color: darkturquoise;
+}
+.form{
+    max-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#id_username{
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: none;
+}
+#id_description{
+    padding: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+.btn{
+    width: 220px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    /* background: rgba(0, 0, 0, .3); */
+    background: linear-gradient(to left, red, blue);
+    color: sandybrown;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 7s;
+}
+a{
+    color: white;
+}
+.parent{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+p{
+    text-align: center;
+    font-size: 3rem;
+    color: whitesmoke;
+}
+.boxParent{
+    margin-top: 10px;
+    width: 300px;
+    height: auto;
+    border: 4px solid black;
+    color: white;
+    padding: 20px;
+}
+.boxParent blockquote{
+    font-weight: 900;
+}
+.boxH1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 145px;
+}
+.span{
+    font-size: 3rem;
+}
+.boxParent hr{
+    border: 2px solid lightcoral;
+    box-shadow: 2px 2px 12px 1px darkgoldenrod;
+    margin-top: 20px;
+}
+
+.acıklama{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    font-size: 3rem;
+    color: yellow;
+    text-align: center;
+}

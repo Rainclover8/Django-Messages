@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Anasayfa{% endblock title %}
+
+{% block content %}
+
+<nav class="navbar">
+    <a class="link" href="{% url "nasılÇalışır" %}">Nasıl Çalışlır</a>
+    <h1 class="header">Baran <span>ÇİÇEK</span>  👋</h1>
+    <a class="link" href="{% url "message" %}">Mesaj kısmına gider</a>
+</nav>
+
+
+{% if messages %}
+
+<div class="parent">
+{% for message in messages %}
+    <div class="boxParent">
+        <blockquote > <span class="span">"</span>{{message.description}} </blockquote> <hr>
+        <h1 class="boxH1" >{{message.username}}</h1><hr>
+    </div>
+
+
+    {% endfor %}
+</div>
+{% else %}
+<p>Henüz kimser bir şey yazmamış...  İlk olmak ister misin ?</p>
+{% endif %}
+
+
+{% endblock content %}

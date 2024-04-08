@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}How it's Works{% endblock title %}
+
+{% block content %}
+<nav class="navbar">
+    <a class="link" href="{% url "nasılÇalışır" %}">Nasıl Çalışlır</a>
+    <h1 class="header">Baran <span>ÇİÇEK</span>  👋</h1>
+    <a class="link" href="{% url "message" %}">Mesaj kısmına gider</a>
+</nav>
+
+<h1 class="acıklama">Yapmanız gerekenler üstteki "Mesaj Kısmına gider" e basıp adınızı soyadınızı ve sözünüzü yazmanız...</h1>
+{% endblock content %}
